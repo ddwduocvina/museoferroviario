@@ -1,10 +1,6 @@
-/* estilo css */
+/* Estilos CSS */
 
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-/* CSS Reset =============================== */
+/* CSS Reset */
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -27,7 +23,6 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
-/* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
@@ -35,7 +30,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
-ol, ul {
+ol, ul, li{
 	list-style: none;
 }
 blockquote, q {
@@ -55,7 +50,7 @@ a, a:hover {
     text-decoration: none;
 }
 
-/* Variables */
+/* Variables ========================== */
 
 :root{
     --var-blanco: #fff;  
@@ -71,15 +66,12 @@ a, a:hover {
 
 /* Fuentes ========================= */
 
-/* Para especificar:
-font-family: 'Poppins', sans-serif;
-font-family: 'Spectral', serif; */
-
 h2, h4, .span-fechas-crono{
     font-family: 'Spectral', serif;
 }
 
-a, span, p, h3, h5 {
+a, span, p, h3, h5, h6, label, *::placeholder {
+
     font-family: 'Poppins', sans-serif;
 }
 
@@ -122,6 +114,10 @@ h3::before {
     top: 50%;
 }
 
+.h3-alt::before {
+    background-color: #5C5C5C;
+}
+
 h4, .span-h4 {
     font-size: 36px;
     font-weight: 700;
@@ -133,14 +129,31 @@ h5 {
     margin-bottom: 12px;
 }
 
+h6 {
+    color: #3F3F3F;
+    font-size: 16px;
+    font-weight: 400;
+}
+.h6-footer {
+    font-weight: 300;;
+}
 p {
     font-size: 15px;
     font-weight: 200;
     line-height: 1.55em;
     margin-bottom: 20px;
-    max-width: 25ch;
 }
 
+h6, .p-footer {
+    font-weight: 400;
+
+}
+
+p {
+    font-size: 15px;
+    font-weight: 200;
+    line-height: 1.55em;   
+}
 .fw-300 {
     font-weight: 300;
 }
@@ -154,8 +167,27 @@ a, .span-a {
     color: #fff;
 }
 
+.link-footer, .titulo-footer, h6 {
+    color: #000;
+    text-decoration: none;
+    font-weight: 400;
+}
+.link-footer-contacto {
+    color: #000;
+    text-decoration: none;
+    font-weight: 200;
+}
+
+.link-footer {
+    margin-bottom: 16px;
+}
+
+.titulo-footer {
+    margin-bottom: 12px;
+}
+
 .span-fechas {
-    background-color: var(--var-btn-primary-hover);
+    background-color: var(--var-btn-primary);
     color: var(--var-blanco);
     padding: 2px 8px;
     border-radius: 4px; 
@@ -267,10 +299,23 @@ a, .span-a {
 
 
 
+label {
+    font-size: 13px;
+    font-weight: 400;
+    padding: 0 8px;
+    background: #fff;
+}
 
+*::placeholder {
+    font-weight: 300;
+    font-size: 16px;
+}
 
-
-
+.form__input {
+    border-radius: 16px;
+    padding: 16px 24px;
+    border: 1px solid #d0d0d0;
+}
 
 /* Botones */
 
@@ -284,7 +329,7 @@ a, .span-a {
 }
 
 .btn:hover, .btn:focus{
-    transform: translateY(-2px);
+    transform: translateY(-4px);
     transition: 100ms ease-out transform;
     border: 2px solid #fff;
 }
@@ -317,11 +362,8 @@ img {
     border-radius: 16px;
 }
 
-
-
 .navegador {
-	float: right;
-		
+	float: right;		
 }
 
 /* Footer */
@@ -329,14 +371,18 @@ img {
     background-color: #f1f3d6;
 }
 .logo-footer {
-    width: 150px;
+    width: 100%;
     height: 70px;
 }
 .fondo-footer-2 {
-    background-color: olive;
+    background-color: #A4A965;
 }
 .rrss a {
-    color: olive;
+    color: #C5CA91;
+    font-size: 40px;
+}
+iframe {
+    border-radius: 15px; 
 }
 .navegador {
 	float: right;
