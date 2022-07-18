@@ -79,7 +79,7 @@ h2, h4, .span-fechas-crono{
     font-family: 'Spectral', serif;
 }
 
-a, span, p, h3, h5 {
+a, span, p, h3, h5, h6 {
     font-family: 'Poppins', sans-serif;
 }
 
@@ -132,13 +132,16 @@ h5 {
     font-weight: 500;
     margin-bottom: 12px;
 }
-
+h6 {
+    color: #3F3F3F;
+    font-size: 16px;
+    font-weight: 400;
+}
 p {
     font-size: 15px;
     font-weight: 200;
     line-height: 1.55em;
     margin-bottom: 20px;
-    max-width: 25ch;
 }
 
 .fw-300 {
@@ -237,11 +240,8 @@ img {
     border-radius: 16px;
 }
 
-
-
 .navegador {
-	float: right;
-		
+	float: right;		
 }
 
 /* Footer */
@@ -249,12 +249,16 @@ img {
     background-color: #f1f3d6;
 }
 .logo-footer {
-    width: 150px;
+    width: 100%;
     height: 70px;
 }
 .fondo-footer-2 {
-    background-color: olive;
+    background-color: #A4A965;
 }
 .rrss a {
-    color: olive;
+    color: #C5CA91;
+    font-size: 40px;
+}
+iframe {
+    border-radius: 15px; 
 }
