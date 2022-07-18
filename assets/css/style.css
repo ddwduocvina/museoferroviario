@@ -51,13 +51,31 @@ table {
 	border-spacing: 0;
 }
 
+a, a:hover {
+    text-decoration: none;
+}
+
+/* Variables */
+
+:root{
+    --var-blanco: #fff;  
+    --var-btn-primary: #54939E;
+    --var-btn-primary-hover: #80BFC4;
+    --var-btn-secondary: #E9ECC7;
+    --var-btn-secondary-hover: #A4A965;
+    --var-btn-secondary-txt-hover: #687126;
+    --var-dorado: #EBC06F;
+    --var-txt-dorado: #DBA135;
+    --var-gris-claro: #F3F7F8;
+} 
+
 /* Fuentes ========================= */
 
 /* Para especificar:
 font-family: 'Poppins', sans-serif;
 font-family: 'Spectral', serif; */
 
-h2, h4 {
+h2, h4, .span-fechas-crono{
     font-family: 'Spectral', serif;
 }
 
@@ -66,52 +84,93 @@ a, span, p, h3, h5 {
 }
 
 h2 {
-    font-size: 40px;
+    font-size: 64px;
     font-weight: 700;
     text-transform: capitalize;
+    margin-bottom: 8px;
 }
 
 h3 {
     font-size: 26px;
     font-weight: 600;
+    color: #545454;
+    position: relative;
+    padding: 0 40px;
+    z-index: 1;
+    margin: 0 auto 24px;
+    text-align: center;
+    display: inline-block;
+    width: auto;
 }
 
-h4 .span-h4 {
-    font-size: 29px;
+.h3-span {
+    background-color: var(--var-blanco);
+    position: relative;
+    padding: 0 12px;
+}
+
+.h3-span-alt {
+    background-color: var(--gris-claro);
+}
+
+h3::before {
+    content: '';
+    position: absolute;
+    background-color: var(--var-dorado);
+    height: 2px;
+    inset: 0;
+    top: 50%;
+}
+
+h4, .span-h4 {
+    font-size: 36px;
+    font-weight: 700;
 }
 
 h5 {
-    font-size: 22px;
-    font-weight: 600;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 12px;
 }
 
 p {
     font-size: 15px;
     font-weight: 200;
+    line-height: 1.55em;
+    margin-bottom: 20px;
+    max-width: 25ch;
 }
 
-p .fw-400 {
-    font-weight: 400;
+.fw-300 {
+    font-weight: 300;
 }
 
 a {
-    font-weight: 400;
+    font-weight: 300;
 }
 
-a .span-a {
+a, .span-a {
     text-decoration: underline;
     color: #fff;
 }
 
 .span-fechas {
-    background-color: skyblue;
+    background-color: var(--var-btn-primary-hover);
+    color: var(--var-blanco);
+    padding: 2px 8px;
+    border-radius: 4px; 
     font-size: 12px;
     font-weight: 200;
 }
 
-nav li {
-    font-weight: 200;
+.span-fechas-crono {
+    font-size: 29px;
+    color: var(--var-txt-dorado);
+    font-weight: 300;
+    position: relative;
+    padding-left: 16px;
 }
+
 /* Modulo actividades */
 .modulo_entrada {
     text-decoration: none;
@@ -125,6 +184,23 @@ nav li {
     height: auto;
     object-fit: cover;
     position: relative;
+}
+
+.span-fechas-crono::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 3px;
+    background-color: var(--var-dorado);
+    inset: 0;
+    top: -2px;
+
+}
+
+.navbar-nav li a {
+    font-weight: 200;
+    font-size: 14px;
+
 }
 .contenedor_texto_modulo{
     position: absolute;
@@ -148,42 +224,73 @@ nav li {
 
 
 
+
+
+
+
 /* Botones */
 
 .btn {
-    font-size: 18px;
-    font-weight: 400;
+    font-size: 14px;
+    font-weight: 300;
     border: 2px solid #fff;
     box-shadow: 0 2px 8px 0 rgba(0,0,0,.15);
-    padding: 16px 20px;
     border-radius: 16px;
+    transition: 100ms ease-out transform;
 }
 
-.btn:hover {
-    transform: translateY(8px);
+.btn:hover, .btn:focus{
+    transform: translateY(-2px);
+    transition: 100ms ease-out transform;
+    border: 2px solid #fff;
 }
 
-/* Cambiar luego -------------------- */
 
-.btn-primary {
-    background-color: cadetblue;
+.btn-primary,  .btn-primary:focus {
+    background-color: var(--var-btn-primary);
+    padding: 13px 24px;
     color: #fff;
-    /* Cambiar */
 }
 
 .btn-secondary {
-    background-color: darkkhaki;
-    color: olive;
+    background-color: var(--var-btn-secondary);
+    color: var(--var-btn-secondary-txt-hover);
+    padding: 13px 72px;
 }
 
 .btn-primary:hover {
-    background: skyblue;
+    background: var(--var-btn-primary-hover);
 }
 
 .btn-secondary:hover {
-    background: olive;
+    background: var(--var-btn-secondary-hover);
     color: #fff;
 }
 
-/* -------- */
+/* Imagenes */
 
+img {
+    border-radius: 16px;
+}
+
+
+
+.navegador {
+	float: right;
+		
+}
+
+/* Footer */
+.fondo-footer {
+    background-color: #f1f3d6;
+}
+.logo-footer {
+    width: 150px;
+    height: 70px;
+}
+.fondo-footer-2 {
+    background-color: olive;
+}
+.rrss a {
+    color: olive;
+}
