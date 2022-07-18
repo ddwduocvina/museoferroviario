@@ -181,6 +181,13 @@ a, .span-a {
 
 /* -------- */
 
+
+
+.navegador {
+	float: right;
+		
+}
+
 .fondo-footer {
     background-color: #f1f3d6
 }
