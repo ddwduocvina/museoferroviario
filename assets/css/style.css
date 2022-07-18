@@ -93,7 +93,7 @@ h2 {
 }
 
 h3 {
-    font-size: 26px;
+    font-size: 30px;
     font-weight: 600;
     color: #545454;
     position: relative;
@@ -259,6 +259,52 @@ a, .span-a {
     background: rgba(0,0,0,.5);
     border-radius: 50%;
 }
+
+/* Sección horarios y precios */
+
+.horarios__p{
+    font-size: 16px;
+    margin-bottom: 12px;
+} 
+
+.horarios__hora {
+    font-size: 24px;
+    font-weight: 700;
+    border-radius: 16px;
+    padding: 16px 0;
+}
+
+.horarios__hora--naranja {
+    color: #DDA53D;
+    background: #FAEED5;
+}
+
+.horarios__hora--celeste {
+    background-color: #CEEFEF;
+    color: var(--var-primary);
+}
+
+.horarios__row {
+    padding: 16px;
+    margin: 0;
+    border-radius: 16px;
+}
+
+.horarios__row--naranja {
+    background-color: #FDF8ED;
+}
+
+.horarios__row--celeste {
+    background-color: #EDF9F9;
+}
+
+.horarios__col {
+    border-radius: 16px; 
+    background-color: white;
+    padding: 16px;
+    box-shadow: 0 4px 12px 0 rgba(0,0,0,.1)
+}
+
 /* Modulo actividades */
 .modulo_entrada {
     text-decoration: none;
