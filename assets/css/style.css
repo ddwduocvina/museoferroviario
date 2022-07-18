@@ -178,6 +178,56 @@ a, .span-a {
     display: block;
     height: 500px;
     overflow: hidden;
+    border-radius: 20px;
+}
+.modulo_entrada:hover .span-fechas{
+    background-color: rgba(211,162,74, 1);
+}
+.modulo_entrada .h4-span {
+    font-size: 36px;
+    font-family: 'Spectral', serif;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+}
+.modulo_entrada:hover .h4-span {
+    color: #fff;
+    
+}
+.modulo_entrada .h4-span::before  {
+    transition: all 1s ease;
+    
+    
+}
+.modulo_entrada:hover .h4-span::before {
+    background-color: rgba(99,146,156,1);
+    display: block;
+    position: absolute;
+    top: -5px;
+    bottom: -5px;
+    left: -40px;
+    right: -20px;
+    content: '';
+    z-index: -1 ;
+    border-bottom-right-radius: 10px ;
+    border-top-right-radius: 10px ;
+    animation: modulo 0.3s infinite;
+    animation-iteration-count: unset;
+}
+@keyframes modulo {
+    from {right: 100%;}
+   to {right: -20px;}
+}
+.modulo_entrada:hover .mask{
+    display: block;
+    z-index: 1;
+}
+.mask {
+    position: absolute;
+    inset: 0;
+    background: rgb(2,0,36);
+    background: linear-gradient(0deg, rgba(2,0,36,.25) 0%, rgba(211,162,74,.2) 35%);
+    display: none;
 }
 .img_modulo {
     width: 100%;
@@ -207,20 +257,14 @@ a, .span-a {
     bottom: 50px;
     left: 40px;
     right: 60px;
+    z-index: 2;
 }
 .p_modulo {
     color: #fff;
     text-decoration: underline;
 }
-.bg_fecha_modulo {
-    background-color:skyblue;
-    color: #fff;
-    border-radius: 15%;
-}
-.h2_modulo {
-    color: #fff;
-    font-family: 'Spectral', serif;
-}
+
+
 
 
 
