@@ -51,6 +51,7 @@ table {
 	border-spacing: 0;
 }
 
+
 /* Fuentes ========================= */
 
 /* Para especificar:
@@ -171,6 +172,17 @@ nav li {
 		
 }
 
+/* Footer */
 .fondo-footer {
-    background-color: #f1f3d6
+    background-color: #f1f3d6;
+}
+.logo-footer {
+    width: 150px;
+    height: 70px;
+}
+.fondo-footer-2 {
+    background-color: olive;
+}
+.rrss a {
+    color: olive;
 }
