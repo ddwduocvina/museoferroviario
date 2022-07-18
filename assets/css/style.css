@@ -90,7 +90,7 @@ p {
     font-weight: 200;
 }
 
-p .bajada {
+p .fw-400 {
     font-weight: 400;
 }
 
@@ -101,3 +101,38 @@ a {
 nav li {
     font-weight: 200;
 }
+
+/* Botones */
+
+.btn {
+    font-size: 18px;
+    font-weight: 400;
+    border: 2px solid #fff;
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,.15);
+    padding: 16px 20px;
+}
+
+/* Cambiar luego -------------------- */
+
+.btn-primary {
+    background-color: cadetblue;
+    color: #fff;
+    /* Cambiar */
+}
+
+.btn-secondary {
+    background-color: darkkhaki;
+    color: olive;
+}
+
+.btn-primary:hover {
+    background: skyblue;
+}
+
+.btn-secondary:hover {
+    background: olive;
+    color: #fff;
+}
+
+/* -------- */
+
