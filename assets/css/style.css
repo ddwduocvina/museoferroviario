@@ -113,15 +113,16 @@ nav li {
     font-weight: 200;
 }
 
-.modulo_entrada {
-    text-decoration: none;
-}
-.modulo_entrada p {
-    display: block;
-}
-.modulo_entrada h3 {
-    display: block;
-}
+
+/* Variables */
+
+
+:root{
+    --var-azul: #54939E;
+    --var-celeste: #80BFC4;
+} 
+
+
 
 
 /* Botones */
@@ -168,4 +169,8 @@ nav li {
 .navegador {
 	float: right;
 		
+}
+
+.fondo-footer {
+    background-color: #f1f3d6
 }
