@@ -552,6 +552,10 @@ img {
 .img-nocicias, .borde-card-noticias {
     border-radius: 20px;
 }
+.hover-card:hover {
+    transform: translateY(-4px);
+    transition: 100ms ease-out transform;
+}
 
 /* Footer */
 .fondo-footer {
@@ -571,7 +575,6 @@ img {
 iframe {
     border-radius: 15px; 
 	background-color: var(--var-secondary);
-
 	background-color: rgb(239, 240, 187);
 	padding: 2px 20px;
 }
