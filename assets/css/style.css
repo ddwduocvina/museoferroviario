@@ -4,7 +4,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-/* CSS Reset */
+/* CSS Reset =============================== */
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -51,7 +51,7 @@ table {
 	border-spacing: 0;
 }
 
-/* Fuentes */
+/* Fuentes ========================= */
 
 /* Para especificar:
 font-family: 'Poppins', sans-serif;
@@ -76,6 +76,23 @@ h3 {
     font-weight: 600;
 }
 
+h4 {
+    font-size: 29px;
+}
+
 p {
     font-size: 15px;
+    font-weight: 200;
+}
+
+p .bajada {
+    font-weight: 400;
+}
+
+a {
+    font-weight: 400;
+}
+
+nav li {
+    font-weight: 200;
 }
