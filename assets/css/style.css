@@ -101,3 +101,12 @@ a {
 nav li {
     font-weight: 200;
 }
+.modulo_entrada {
+    text-decoration: none;
+}
+.modulo_entrada p {
+    display: block;
+}
+.modulo_entrada h3 {
+    display: block;
+}
