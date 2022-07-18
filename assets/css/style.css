@@ -440,6 +440,7 @@ label {
     box-shadow: 0 2px 8px 0 rgba(0,0,0,.15);
     border-radius: 16px;
     transition: 100ms ease-out transform;
+	font-family: 'Poppins', sans-serif;
 }
 
 .btn:hover, .btn:focus{
@@ -487,43 +488,59 @@ img {
 
 .navbar-light .navbar-nav .nav-link {
 	color: black;
+	font-size: medium;
 }
 
 .navbar-light .navbar-nav .nav-link :hover{
 	color: skyblue;
 }
 
+.nav-link {
+	color: #545454;
+	font-size: small;
+	
+}
+
 .btn-reserva {
 	background-color: cadetblue;
 	color: white;
-
+	font-size: medium;
+	padding: 15px 27px;
 }
 
 .btn-reserva:hover {
 	background-color: rgb(132, 187, 189);
 	color: white;
+	padding: 15px 27px;
+	margin-bottom: 10px;
+	transition: 0.3s;
 
 }
 
 .btn-reserva i{
 	rotate: 60px;
 	transition: 0.5s;
-	transform: rotate(-80deg);
-	margin-right: 2px;
+	transform: rotate(-50deg);
+	margin-right: 6px;
 	
 
 }
 
 .btn-reserva:hover i{
 	rotate: 60px;
-	transition: 0.5s;
-	transform: rotate(-50deg);
-	margin-right: 2px;
+	transition: 0.3s;
+	transform: rotate(-120deg);
+	margin-right: 6px;
 	
 
 }
+.iconn {
+	color: olive;
+	margin: 5px;
+}
 
 .fondoup {
+
 	background-color: darkkhaki;
 }
 
@@ -554,4 +571,54 @@ img {
 iframe {
     border-radius: 15px; 
 	background-color: var(--var-secondary);
+
+	background-color: rgb(239, 240, 187);
+	padding: 2px 20px;
+}
+
+.faverde {
+	color: rgb(142, 199, 56);
+	margin-right: 5px;
+}
+
+.par p {
+	font-size: 13px;
+	color: black;
+}
+
+.logoo {
+	position: relative;
+	overflow: hidden;
+	padding-bottom: 20px;
+}
+.logoo img{
+	position: relative;
+	z-index: 2;
+}
+
+.logoo::before {
+	height: 290px;
+	z-index: 1;
+    background-color: white;
+    border-radius: 152px;
+    position: absolute;
+    content: '';
+    left: 0;
+    right: 0;
+    bottom: 0px;
+}
+.barraheader {
+	height: 137px;
+	
+}
+
+.bg-white2 {
+	background-color: white;
+	height: 110px;
+	padding-top: 15px;
+}
+
+.barra {
+	background-color: yellowgreen;
+
 }
