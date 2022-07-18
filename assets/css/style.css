@@ -4,7 +4,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-/* CSS Reset */
+/* CSS Reset =============================== */
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -51,7 +51,7 @@ table {
 	border-spacing: 0;
 }
 
-/* Fuentes */
+/* Fuentes ========================= */
 
 /* Para especificar:
 font-family: 'Poppins', sans-serif;
@@ -61,7 +61,7 @@ h2, h4 {
     font-family: 'Spectral', serif;
 }
 
-a, span, p, h3 {
+a, span, p, h3, h5 {
     font-family: 'Poppins', sans-serif;
 }
 
@@ -76,6 +76,90 @@ h3 {
     font-weight: 600;
 }
 
+h4 .span-h4 {
+    font-size: 29px;
+}
+
+h5 {
+    font-size: 22px;
+    font-weight: 600;
+}
+
 p {
     font-size: 15px;
+    font-weight: 200;
 }
+
+p .fw-400 {
+    font-weight: 400;
+}
+
+a {
+    font-weight: 400;
+}
+
+a .span-a {
+    text-decoration: underline;
+    color: #fff;
+}
+
+.span-fechas {
+    background-color: skyblue;
+    font-size: 12px;
+    font-weight: 200;
+}
+
+nav li {
+    font-weight: 200;
+}
+
+.modulo_entrada {
+    text-decoration: none;
+}
+.modulo_entrada p {
+    display: block;
+}
+.modulo_entrada h3 {
+    display: block;
+}
+
+
+/* Botones */
+
+.btn {
+    font-size: 18px;
+    font-weight: 400;
+    border: 2px solid #fff;
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,.15);
+    padding: 16px 20px;
+    border-radius: 16px;
+}
+
+.btn:hover {
+    transform: translateY(8px);
+}
+
+/* Cambiar luego -------------------- */
+
+.btn-primary {
+    background-color: cadetblue;
+    color: #fff;
+    /* Cambiar */
+}
+
+.btn-secondary {
+    background-color: darkkhaki;
+    color: olive;
+}
+
+.btn-primary:hover {
+    background: skyblue;
+}
+
+.btn-secondary:hover {
+    background: olive;
+    color: #fff;
+}
+
+/* -------- */
+
