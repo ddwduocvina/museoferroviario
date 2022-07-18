@@ -51,6 +51,10 @@ table {
 	border-spacing: 0;
 }
 
+a, a:hover {
+    text-decoration: none;
+}
+
 /* Fuentes ========================= */
 
 /* Para especificar:
@@ -66,7 +70,7 @@ a, span, p, h3, h5 {
 }
 
 h2 {
-    font-size: 40px;
+    font-size: 64px;
     font-weight: 700;
     text-transform: capitalize;
 }
@@ -74,14 +78,15 @@ h2 {
 h3 {
     font-size: 26px;
     font-weight: 600;
+    color: #545454;
 }
 
-h4 .span-h4 {
-    font-size: 29px;
+h4, .span-h4 {
+    font-size: 36px;
 }
 
 h5 {
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 600;
 }
 
@@ -90,7 +95,7 @@ p {
     font-weight: 200;
 }
 
-p .fw-400 {
+p, .fw-400 {
     font-weight: 400;
 }
 
@@ -98,19 +103,23 @@ a {
     font-weight: 400;
 }
 
-a .span-a {
+a, .span-a {
     text-decoration: underline;
     color: #fff;
 }
 
 .span-fechas {
-    background-color: skyblue;
+    background-color: var(--var-btn-primary-hover);
+    color: var(--var-blanco);
+    padding: 2px 8px;
+    border-radius: 4px; 
     font-size: 12px;
     font-weight: 200;
 }
 
-nav li {
+.navbar-nav li a {
     font-weight: 200;
+    font-size: 14px;
 }
 
 
@@ -118,8 +127,12 @@ nav li {
 
 
 :root{
-    --var-azul: #54939E;
-    --var-celeste: #80BFC4;
+    --var-blanco: #fff;  
+    --var-btn-primary: #54939E;
+    --var-btn-primary-hover: #80BFC4;
+    --var-btn-secondary: #E9ECC7;
+    --var-btn-secondary-hover: #A4A965;
+    --var-btn-secondary-txt-hover: #687126;
 } 
 
 
@@ -128,37 +141,41 @@ nav li {
 /* Botones */
 
 .btn {
-    font-size: 18px;
-    font-weight: 400;
+    font-size: 14px;
+    font-weight: 300;
     border: 2px solid #fff;
     box-shadow: 0 2px 8px 0 rgba(0,0,0,.15);
-    padding: 16px 20px;
     border-radius: 16px;
+    transition: 100ms ease-out transform;
 }
 
 .btn:hover {
-    transform: translateY(8px);
+    transform: translateY(-2px);
+    transition: 100ms ease-out transform;
+    border: 2px solid #fff;
 }
 
 /* Cambiar luego -------------------- */
 
 .btn-primary {
-    background-color: cadetblue;
+    background-color: var(--var-btn-primary);
+    padding: 13px 24px;
     color: #fff;
     /* Cambiar */
 }
 
 .btn-secondary {
-    background-color: darkkhaki;
-    color: olive;
+    background-color: var(--var-btn-secondary);
+    color: var(--var-btn-secondary-txt-hover);
+    padding: 13px 72px;
 }
 
 .btn-primary:hover {
-    background: skyblue;
+    background: var(--var-btn-primary-hover);
 }
 
 .btn-secondary:hover {
-    background: olive;
+    background: var(--var-btn-secondary-hover);
     color: #fff;
 }
 
