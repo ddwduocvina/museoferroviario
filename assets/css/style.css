@@ -1,10 +1,6 @@
-/* estilo css */
+/* Estilos CSS */
 
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-/* CSS Reset =============================== */
+/* CSS Reset */
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -27,7 +23,6 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
-/* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
@@ -35,7 +30,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
-ol, ul {
+ol, ul, li{
 	list-style: none;
 }
 blockquote, q {
@@ -55,7 +50,7 @@ a, a:hover {
     text-decoration: none;
 }
 
-/* Variables */
+/* Variables ========================== */
 
 :root{
     --var-blanco: #fff;  
@@ -71,15 +66,12 @@ a, a:hover {
 
 /* Fuentes ========================= */
 
-/* Para especificar:
-font-family: 'Poppins', sans-serif;
-font-family: 'Spectral', serif; */
-
 h2, h4, .span-fechas-crono{
     font-family: 'Spectral', serif;
 }
 
-a, span, p, h3, h5, h6 {
+a, span, p, h3, h5, h6, label, *::placeholder {
+
     font-family: 'Poppins', sans-serif;
 }
 
@@ -122,6 +114,10 @@ h3::before {
     top: 50%;
 }
 
+.h3-alt::before {
+    background-color: #5C5C5C;
+}
+
 h4, .span-h4 {
     font-size: 36px;
     font-weight: 700;
@@ -132,10 +128,14 @@ h5 {
     font-weight: 500;
     margin-bottom: 12px;
 }
+
 h6 {
     color: #3F3F3F;
     font-size: 16px;
     font-weight: 400;
+}
+.h6-footer {
+    font-weight: 300;;
 }
 p {
     font-size: 15px;
@@ -144,6 +144,16 @@ p {
     margin-bottom: 20px;
 }
 
+h6, .p-footer {
+    font-weight: 400;
+
+}
+
+p {
+    font-size: 15px;
+    font-weight: 200;
+    line-height: 1.55em;   
+}
 .fw-300 {
     font-weight: 300;
 }
@@ -157,8 +167,27 @@ a, .span-a {
     color: #fff;
 }
 
+.link-footer, .titulo-footer, h6 {
+    color: #000;
+    text-decoration: none;
+    font-weight: 400;
+}
+.link-footer-contacto {
+    color: #000;
+    text-decoration: none;
+    font-weight: 200;
+}
+
+.link-footer {
+    margin-bottom: 16px;
+}
+
+.titulo-footer {
+    margin-bottom: 12px;
+}
+
 .span-fechas {
-    background-color: var(--var-btn-primary-hover);
+    background-color: var(--var-btn-primary);
     color: var(--var-blanco);
     padding: 2px 8px;
     border-radius: 4px; 
@@ -172,6 +201,21 @@ a, .span-a {
     font-weight: 300;
     position: relative;
     padding-left: 16px;
+}
+
+/* Modulo actividades */
+.modulo_entrada {
+    text-decoration: none;
+    position: relative;
+    display: block;
+    height: 500px;
+    overflow: hidden;
+}
+.img_modulo {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    position: relative;
 }
 
 .span-fechas-crono::before {
@@ -188,12 +232,46 @@ a, .span-a {
 .navbar-nav li a {
     font-weight: 200;
     font-size: 14px;
+
+}
+.contenedor_texto_modulo{
+    position: absolute;
+    bottom: 50px;
+    left: 40px;
+    right: 60px;
+}
+.p_modulo {
+    color: #fff;
+    text-decoration: underline;
+}
+.bg_fecha_modulo {
+    background-color:skyblue;
+    color: #fff;
+    border-radius: 15%;
+}
+.h2_modulo {
+    color: #fff;
+    font-family: 'Spectral', serif;
 }
 
 
+label {
+    font-size: 13px;
+    font-weight: 400;
+    padding: 0 8px;
+    background: #fff;
+}
 
+*::placeholder {
+    font-weight: 300;
+    font-size: 16px;
+}
 
-
+.form__input {
+    border-radius: 16px;
+    padding: 16px 24px;
+    border: 1px solid #d0d0d0;
+}
 
 /* Botones */
 
@@ -207,7 +285,7 @@ a, .span-a {
 }
 
 .btn:hover, .btn:focus{
-    transform: translateY(-2px);
+    transform: translateY(-4px);
     transition: 100ms ease-out transform;
     border: 2px solid #fff;
 }
@@ -261,4 +339,49 @@ img {
 }
 iframe {
     border-radius: 15px; 
+}
+.navegador {
+	float: right;
+} 
+
+.navbar-light .navbar-nav .nav-link {
+	color: black;
+}
+
+.navbar-light .navbar-nav .nav-link :hover{
+	color: skyblue;
+}
+
+.btn-reserva {
+	background-color: cadetblue;
+	color: white;
+
+}
+
+.btn-reserva:hover {
+	background-color: rgb(132, 187, 189);
+	color: white;
+
+}
+
+.btn-reserva i{
+	rotate: 60px;
+	transition: 0.5s;
+	transform: rotate(-80deg);
+	margin-right: 2px;
+	
+
+}
+
+.btn-reserva:hover i{
+	rotate: 60px;
+	transition: 0.5s;
+	transform: rotate(-50deg);
+	margin-right: 2px;
+	
+
+}
+
+.fondoup {
+	background-color: darkkhaki;
 }
