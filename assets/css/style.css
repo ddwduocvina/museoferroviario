@@ -76,7 +76,7 @@ h3 {
     font-weight: 600;
 }
 
-h4 {
+h4 .span-h4 {
     font-size: 29px;
 }
 
@@ -98,6 +98,17 @@ a {
     font-weight: 400;
 }
 
+a .span-a {
+    text-decoration: underline;
+    color: #fff;
+}
+
+.span-fechas {
+    background-color: skyblue;
+    font-size: 12px;
+    font-weight: 200;
+}
+
 nav li {
     font-weight: 200;
 }
@@ -111,6 +122,10 @@ nav li {
     box-shadow: 0 2px 8px 0 rgba(0,0,0,.15);
     padding: 16px 20px;
     border-radius: 16px;
+}
+
+.btn:hover {
+    transform: translateY(8px);
 }
 
 /* Cambiar luego -------------------- */
