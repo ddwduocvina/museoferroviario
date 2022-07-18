@@ -294,3 +294,48 @@ img {
 .rrss a {
     color: olive;
 }
+.navegador {
+	float: right;
+} 
+
+.navbar-light .navbar-nav .nav-link {
+	color: black;
+}
+
+.navbar-light .navbar-nav .nav-link :hover{
+	color: skyblue;
+}
+
+.btn-reserva {
+	background-color: cadetblue;
+	color: white;
+
+}
+
+.btn-reserva:hover {
+	background-color: rgb(132, 187, 189);
+	color: white;
+
+}
+
+.btn-reserva i{
+	rotate: 60px;
+	transition: 0.5s;
+	transform: rotate(-80deg);
+	margin-right: 2px;
+	
+
+}
+
+.btn-reserva:hover i{
+	rotate: 60px;
+	transition: 0.5s;
+	transform: rotate(-50deg);
+	margin-right: 2px;
+	
+
+}
+
+.fondoup {
+	background-color: darkkhaki;
+}
