@@ -112,12 +112,19 @@ a .span-a {
 nav li {
     font-weight: 200;
 }
+
+
 /* Variables */
+
 
 :root{
     --var-azul: #54939E;
-    --var-celeste:
+    --var-celeste: #80BFC4;
 } 
+
+
+
+
 /* Botones */
 
 .btn {
