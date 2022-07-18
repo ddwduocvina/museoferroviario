@@ -112,7 +112,12 @@ a .span-a {
 nav li {
     font-weight: 200;
 }
+/* Variables */
 
+:root{
+    --var-azul: #54939E;
+    --var-celeste:
+} 
 /* Botones */
 
 .btn {
@@ -152,3 +157,6 @@ nav li {
 
 /* -------- */
 
+.fondo-footer {
+    background-color: #f1f3d6
+}
