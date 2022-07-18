@@ -74,6 +74,7 @@ h2, h4, .span-fechas-crono, .span-h2-titulo{
 }
 
 a, span, p, h3, h5, h6, label, *::placeholder {
+
     font-family: 'Poppins', sans-serif;
 }
 
@@ -145,6 +146,21 @@ h5 {
 }
 
 h6 {
+    color: #3F3F3F;
+    font-size: 16px;
+    font-weight: 400;
+}
+.h6-footer {
+    font-weight: 300;;
+}
+p {
+    font-size: 15px;
+    font-weight: 200;
+    line-height: 1.55em;
+    margin-bottom: 20px;
+}
+
+h6, .p-footer {
     font-weight: 400;
 
 }
@@ -154,7 +170,6 @@ p {
     font-weight: 200;
     line-height: 1.55em;   
 }
-
 .fw-300 {
     font-weight: 300;
 }
@@ -171,6 +186,11 @@ a, .span-a {
 .link-footer, .titulo-footer, h6 {
     color: #000;
     font-weight: 400;
+}
+.link-footer-contacto {
+    color: #000;
+    text-decoration: none;
+    font-weight: 200;
 }
 
 .link-footer {
@@ -246,6 +266,56 @@ a, .span-a {
     display: block;
     height: 500px;
     overflow: hidden;
+    border-radius: 20px;
+}
+.modulo_entrada:hover .span-fechas{
+    background-color: rgba(211,162,74, 1);
+}
+.modulo_entrada .h4-span {
+    font-size: 36px;
+    font-family: 'Spectral', serif;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+}
+.modulo_entrada:hover .h4-span {
+    color: #fff;
+    
+}
+.modulo_entrada .h4-span::before  {
+    transition: all 1s ease;
+    
+    
+}
+.modulo_entrada:hover .h4-span::before {
+    background-color: rgba(99,146,156,1);
+    display: block;
+    position: absolute;
+    top: -5px;
+    bottom: -5px;
+    left: -40px;
+    right: -20px;
+    content: '';
+    z-index: -1 ;
+    border-bottom-right-radius: 10px ;
+    border-top-right-radius: 10px ;
+    animation: modulo 0.3s infinite;
+    animation-iteration-count: unset;
+}
+@keyframes modulo {
+    from {right: 100%;}
+   to {right: -20px;}
+}
+.modulo_entrada:hover .mask{
+    display: block;
+    z-index: 1;
+}
+.mask {
+    position: absolute;
+    inset: 0;
+    background: rgb(2,0,36);
+    background: linear-gradient(0deg, rgba(2,0,36,.25) 0%, rgba(211,162,74,.2) 35%);
+    display: none;
 }
 .img_modulo {
     width: 100%;
@@ -275,20 +345,14 @@ a, .span-a {
     bottom: 50px;
     left: 40px;
     right: 60px;
+    z-index: 2;
 }
 .p_modulo {
     color: #fff;
     text-decoration: underline;
 }
-.bg_fecha_modulo {
-    background-color:skyblue;
-    color: #fff;
-    border-radius: 15%;
-}
-.h2_modulo {
-    color: #fff;
-    font-family: 'Spectral', serif;
-}
+
+
 
 
 label {
@@ -354,8 +418,7 @@ img {
 }
 
 .navegador {
-	float: right;
-		
+	float: right;		
 }
 
 /* Footer */
@@ -363,14 +426,18 @@ img {
     background-color: #f1f3d6;
 }
 .logo-footer {
-    width: 150px;
+    width: 100%;
     height: 70px;
 }
 .fondo-footer-2 {
-    background-color: olive;
+    background-color: #A4A965;
 }
 .rrss a {
-    color: olive;
+    color: #C5CA91;
+    font-size: 40px;
+}
+iframe {
+    border-radius: 15px; 
 }
 .navegador {
 	float: right;
