@@ -112,16 +112,40 @@ a .span-a {
 nav li {
     font-weight: 200;
 }
-
+/* Modulo actividades */
 .modulo_entrada {
     text-decoration: none;
-}
-.modulo_entrada p {
+    position: relative;
     display: block;
+    height: 500px;
+    overflow: hidden;
 }
-.modulo_entrada h3 {
-    display: block;
+.img_modulo {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    position: relative;
 }
+.contenedor_texto_modulo{
+    position: absolute;
+    bottom: 50px;
+    left: 40px;
+    right: 60px;
+}
+.p_modulo {
+    color: #fff;
+    text-decoration: underline;
+}
+.bg_fecha_modulo {
+    background-color:skyblue;
+    color: #fff;
+    border-radius: 15%;
+}
+.h2_modulo {
+    color: #fff;
+    font-family: 'Spectral', serif;
+}
+
 
 
 /* Botones */
