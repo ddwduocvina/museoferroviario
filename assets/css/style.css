@@ -183,6 +183,21 @@ a, .span-a {
     padding-left: 16px;
 }
 
+/* Modulo actividades */
+.modulo_entrada {
+    text-decoration: none;
+    position: relative;
+    display: block;
+    height: 500px;
+    overflow: hidden;
+}
+.img_modulo {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    position: relative;
+}
+
 .span-fechas-crono::before {
     content: '';
     position: absolute;
@@ -197,7 +212,28 @@ a, .span-a {
 .navbar-nav li a {
     font-weight: 200;
     font-size: 14px;
+
 }
+.contenedor_texto_modulo{
+    position: absolute;
+    bottom: 50px;
+    left: 40px;
+    right: 60px;
+}
+.p_modulo {
+    color: #fff;
+    text-decoration: underline;
+}
+.bg_fecha_modulo {
+    background-color:skyblue;
+    color: #fff;
+    border-radius: 15%;
+}
+.h2_modulo {
+    color: #fff;
+    font-family: 'Spectral', serif;
+}
+
 
 label {
     font-size: 13px;
@@ -267,6 +303,62 @@ img {
 		
 }
 
+/* Footer */
 .fondo-footer {
-    background-color: #f1f3d6
+    background-color: #f1f3d6;
+}
+.logo-footer {
+    width: 150px;
+    height: 70px;
+}
+.fondo-footer-2 {
+    background-color: olive;
+}
+.rrss a {
+    color: olive;
+}
+.navegador {
+	float: right;
+} 
+
+.navbar-light .navbar-nav .nav-link {
+	color: black;
+}
+
+.navbar-light .navbar-nav .nav-link :hover{
+	color: skyblue;
+}
+
+.btn-reserva {
+	background-color: cadetblue;
+	color: white;
+
+}
+
+.btn-reserva:hover {
+	background-color: rgb(132, 187, 189);
+	color: white;
+
+}
+
+.btn-reserva i{
+	rotate: 60px;
+	transition: 0.5s;
+	transform: rotate(-80deg);
+	margin-right: 2px;
+	
+
+}
+
+.btn-reserva:hover i{
+	rotate: 60px;
+	transition: 0.5s;
+	transform: rotate(-50deg);
+	margin-right: 2px;
+	
+
+}
+
+.fondoup {
+	background-color: darkkhaki;
 }
