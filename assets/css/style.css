@@ -413,6 +413,18 @@ a, .span-a {
     max-height: 623px;
 }
 
+.modulo-grande-grid2 .img_modulo {
+    max-height: 200px;
+    width: 100%;
+}
+
+.img_modulo2 {
+    object-fit: cover;
+    position: relative;
+    width: 100%;
+    max-height: 300px;
+}
+
 .span-fechas-crono::before {
     content: '';
     position: absolute;
