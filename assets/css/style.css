@@ -236,8 +236,14 @@ a, .span-a {
 
 /* Sección Portada */
 
+.portada {
+    position: relative;
+    z-index: -1;
+    max-height: 600px;
+    overflow: hidden;
+}
 
-.portada source{
+.portada .portada-video{
     
     position: relative;
 	z-index: 0;
@@ -248,7 +254,6 @@ a, .span-a {
 .portada__p {
     max-width: 40ch;
     color: #fff;
-    position: absolute;
 }
 
 .portada__col {
@@ -258,10 +263,20 @@ a, .span-a {
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     border-radius: 50%;
-
+    left: 0;
+    right: 0;
     position: absolute;
     z-index: 1;
     overflow: hidden;
+}
+
+.textodes {
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
 }
 
 /* Portada contactos */
@@ -275,6 +290,17 @@ a, .span-a {
 
     z-index: 1;
 
+}
+
+/* Portada actividades */
+#portada2 {
+    background: url(../img/trenes/FCA-Evento-02.jpeg) 50% no-repeat;
+    position: relative;
+	z-index: 1;
+    background-size: cover;
+    height: 500px;
+    overflow: hidden;
+    z-index: 1;
 }
 
 /* Sección horarios y precios */
@@ -426,14 +452,18 @@ a, .span-a {
   grid-row-start: 1;
   grid-row-end: 3;
 }
-.bg-modulo-actividades{
-    background-color: var(--var-gris-claro);
-}
+
 .h3-span-act {
     background-color: var(--var-gris-claro);
     position: relative;
     padding: 0 12px;
 }
+.h3-span-act2 {
+    background-color: white;
+    position: relative;
+    padding: 0 12px;
+}
+
 .svg-actividades {
     padding: 0;
     margin: 0;
