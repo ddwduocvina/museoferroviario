@@ -282,12 +282,18 @@ a, .span-a {
 
 /* Portada contactos */
 #portada {
+
     background: url(../img/trenes/Telefono-de-rueda-negro-700x341.jpeg) 50% no-repeat;
     position: relative;
 	z-index: 1;
     background-size: cover;
     height: 600px;
     overflow: hidden;
+
+   
+}
+.h2-portada {
+    padding-top: 200px;
 }
 
 
@@ -405,14 +411,14 @@ a, .span-a {
 }
 .modulo_entrada:hover .mask{
     display: block;
-    z-index: 1;
+    background: linear-gradient(0deg, rgba(2,0,36,.25) 0%, rgba(211,162,74,.2) 35%);
 }
 .mask {
     position: absolute;
+    z-index: 1;
     inset: 0;
-    background: rgb(2,0,36);
-    background: linear-gradient(0deg, rgba(2,0,36,.25) 0%, rgba(211,162,74,.2) 35%);
-    display: none;
+    background: linear-gradient(to top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);     
+    display: block;
 }
 .img_modulo {
     object-fit: cover;
@@ -642,6 +648,12 @@ img {
 #patrimonio-botanico {
     margin-top: 100px;
 }
+.imagen-interactiva {
+    background-image: url(../img/mapa-interactivo.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 600px;;
+}
 .card {
     border: none;
 }
@@ -708,7 +720,7 @@ iframe {
 
 /* Contacto*/
 .svg-contacto {
-    margin-top: -60px;
+    margin-top: -110px;
 }
 
 /* linea de tiempo */
