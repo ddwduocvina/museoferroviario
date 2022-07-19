@@ -224,7 +224,7 @@ a, .span-a {
 }
 /* Nav Secundario */
 
-.nav .nav-link{
+.fondoup .nav-link{
     color: var(--var-texto);
     font-size: 12px;
 }
@@ -234,13 +234,16 @@ a, .span-a {
     color: var(--var-secondary-hover);
 }
 
+.nav .dropdown-toggle {
+    background: #EEEAC5;
+    border-radius: 4px;
+}
+
 /* Sección Portada */
 
 .portada source{
-    
     position: relative;
 	z-index: 0;
-    
 }
 
 .portada__p {
@@ -272,8 +275,6 @@ a, .span-a {
 }
 
 /* Sección horarios y precios */
-
-
 
 .horarios__p{
     font-size: 16px;
@@ -319,6 +320,7 @@ a, .span-a {
 }
 
 /* Modulo actividades */
+
 .modulo_entrada {
     text-decoration: none;
     position: relative;
@@ -342,9 +344,8 @@ a, .span-a {
 }
 .modulo_entrada .h4-span::before  {
     transition: all 1s ease;
-    
-    
 }
+
 .modulo_entrada:hover .h4-span::before {
     background-color: rgba(99,146,156,1);
     display: block;
@@ -395,10 +396,19 @@ a, .span-a {
     inset: 0;
     top: -2px;
 }
+
 .navbar-nav li a {
-    font-weight: 200;
+    font-weight: 300;
     font-size: 16px;
+    color: #000 !important;
+    margin: 0 4px;
 }
+
+.navbar-nav .active {
+    color: var(--var-primary) !important;
+    border-bottom: 2px solid var(--var-primary);
+}
+
 .contenedor_texto_modulo{
     position: absolute;
     bottom: 50px;
@@ -431,7 +441,9 @@ a, .span-a {
     padding: 0;
     margin: 0;
 }
-/* */
+
+
+/* Formulario */
 
 
 label {
@@ -479,8 +491,8 @@ label {
 
 .btn-secondary {
     background-color: var(--var-secondary);
-    color: var(--var-btn-secondary-txt-hover);
-    padding: 13px 72px;
+    color: var(--var-secondary-txt-hover);
+    padding: 13px 6.5em;
 }
 
 .btn-primary:hover {
@@ -512,18 +524,6 @@ img {
 }
 
 /* Nav */
-
-.nav-link {
-	color: black;
-    font-weight: 300;
-}
-.navbar-light .navbar-nav .nav-link :hover{
-	color: skyblue;
-}
-
-.nav-link {
-	color: #545454;
-}
 
 .faverde {
 	color: rgb(142, 199, 56);
@@ -559,6 +559,8 @@ img {
     transform: translateY(-4px);
     transition: 100ms ease-out transform;
 }
+
+
 /* Parque museo */
 #patrimonio-botanico {
     margin-top: 100px;
@@ -566,6 +568,14 @@ img {
 .card {
     border: none;
 }
+
+.card-text {
+   font-size: 16px;
+}
+
+#noticias .card-body {
+    padding: 12px 0;
+} 
 .card-patrimonio, .card-patrimonio img {
     border-radius: 15px;
 }
@@ -598,8 +608,6 @@ iframe {
 
 .logoo {
 	position: relative;
-	overflow: hidden;
-	padding-bottom: 20px;
 }
 .logoo img{
 	position: relative;
@@ -607,24 +615,17 @@ iframe {
 }
 
 .logoo::before {
-	height: 290px;
+	height: 115px;
 	z-index: 1;
     background-color: white;
-    border-radius: 152px;
+    border-radius: 50%;
     position: absolute;
     content: '';
-    left: 0;
-    right: 0;
-    bottom: 0px;
-}
-.barraheader {
-	height: 137px;
+    inset: 0;
 }
 
 .bg-white2 {
 	background-color: white;
-    height: 110px;
-	padding-top: 15px;
     box-shadow: 0 5px 18px rgba(0,0,0,.1);
 }
 
