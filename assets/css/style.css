@@ -261,6 +261,16 @@ a, .span-a {
     overflow: hidden;
 }
 
+/* Portada contactos */
+#portada {
+    background: url(../img/trenes/locomotora-2.jpg);
+    position: relative;
+	z-index: 1;
+    background-size: cover;
+    height: 500px;
+    overflow: hidden;
+}
+
 /* Sección horarios y precios */
 
 .horarios__p{
