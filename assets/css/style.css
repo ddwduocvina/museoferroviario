@@ -236,17 +236,19 @@ a, .span-a {
 
 /* Sección Portada */
 
+
 .portada source{
     
     position: relative;
 	z-index: 0;
     
 }
+    
 
 .portada__p {
     max-width: 40ch;
-    margin-inline: auto;
     color: #fff;
+    position: absolute;
 }
 
 .portada__col {
@@ -256,6 +258,7 @@ a, .span-a {
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     border-radius: 50%;
+
     position: absolute;
     z-index: 1;
     overflow: hidden;
@@ -269,6 +272,9 @@ a, .span-a {
     background-size: cover;
     height: 500px;
     overflow: hidden;
+
+    z-index: 1;
+
 }
 
 /* Sección horarios y precios */
