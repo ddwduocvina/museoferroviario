@@ -307,11 +307,11 @@ a, .span-a {
 /* Portada actividades */
 #portada3 {
     background: url(../img/trenes/tren.jpg) 50% no-repeat;
-    position: relative;
-	z-index: 1;
+    /* position: relative;
+	z-index: 1; */
     background-size: cover;
-    height: 600px;
-    overflow: hidden;
+    height: 500px;
+    /* overflow: hidden; */
 }
 
 
