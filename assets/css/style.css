@@ -242,6 +242,19 @@ a, .span-a {
 	z-index: 0;
     
 }
+.portada {
+    position: relative;
+    max-height: 600px;
+    overflow: hidden;
+    z-index: -1;
+}
+.textodes {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
 
 .portada__p {
     max-width: 40ch;
@@ -259,6 +272,8 @@ a, .span-a {
     position: absolute;
     z-index: 1;
     overflow: hidden;
+    left: 0;
+    right: 0;
 }
 
 /* Portada contactos */
@@ -427,10 +442,34 @@ a, .span-a {
     position: relative;
     padding: 0 12px;
 }
+
+.h3-span-act2 {
+    background-color: white;
+    position: relative;
+    padding: 0 12px;
+}
+.h3-span-act3 {
+    background-color: var(--var-gris-claro);
+    position: relative;
+    padding: 0 12px;
+}
+
 .svg-actividades {
     padding: 0;
     margin: 0;
 }
+
+
+.fondoact2 {
+    background-color: var(--var-gris-claro) !important;
+    margin-bottom: 10%;
+} 
+
+.fondoact3{
+    background-color: var(--var-gris-claro) !important;
+    
+} 
+
 /* */
 
 
@@ -511,9 +550,15 @@ img {
     border-radius: 16px;
 }
 
+.navegador {
+	float: right;		
+}
+ 
+.navbar-light .navbar-nav .nav-link {
+
 /* Nav */
 
-.nav-link {
+
 	color: black;
     font-weight: 300;
 }
