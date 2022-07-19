@@ -622,6 +622,7 @@ iframe {
 	background-color: white;
 	height: 110px;
 	padding-top: 15px;
+    box-shadow: 0 5px 18px rgba(0,0,0,.1);
 }
 
 .barra {
