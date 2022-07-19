@@ -497,7 +497,7 @@ a, .span-a {
 
 .fondoact2 {
     background-color: var(--var-gris-claro) !important;
-    margin-bottom: 10%;
+    padding-bottom: 10%;
 } 
 
 .fondoact3{
