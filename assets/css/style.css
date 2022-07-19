@@ -236,19 +236,17 @@ a, .span-a {
 
 /* Sección Portada */
 
-
 .portada source{
     
     position: relative;
 	z-index: 0;
     
 }
-    
 
 .portada__p {
     max-width: 40ch;
+    margin-inline: auto;
     color: #fff;
-    position: absolute;
 }
 
 .portada__col {
@@ -258,7 +256,6 @@ a, .span-a {
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     border-radius: 50%;
-
     position: absolute;
     z-index: 1;
     overflow: hidden;
@@ -272,9 +269,6 @@ a, .span-a {
     background-size: cover;
     height: 500px;
     overflow: hidden;
-
-    z-index: 1;
-
 }
 
 /* Sección horarios y precios */
@@ -400,13 +394,10 @@ a, .span-a {
     background-color: var(--var-dorado);
     inset: 0;
     top: -2px;
-
 }
-
 .navbar-nav li a {
     font-weight: 200;
     font-size: 16px;
-
 }
 .contenedor_texto_modulo{
     position: absolute;
@@ -440,8 +431,6 @@ a, .span-a {
     padding: 0;
     margin: 0;
 }
-
-
 /* */
 
 
@@ -570,7 +559,16 @@ img {
     transform: translateY(-4px);
     transition: 100ms ease-out transform;
 }
-
+/* Parque museo */
+#patrimonio-botanico {
+    margin-top: 100px;
+}
+.card {
+    border: none;
+}
+.card-patrimonio, .card-patrimonio img {
+    border-radius: 15px;
+}
 /* Footer */
 .fondo-footer {
     background-color: #f1f3d6;
