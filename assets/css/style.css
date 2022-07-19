@@ -211,6 +211,8 @@ a, .span-a {
     border-radius: 4px; 
     font-size: 12px;
     font-weight: 200;
+    z-index: 3;
+    position: relative;
 }
 
 .span-fechas-crono {
