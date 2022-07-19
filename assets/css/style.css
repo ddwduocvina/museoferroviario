@@ -563,6 +563,12 @@ img {
 #patrimonio-botanico {
     margin-top: 100px;
 }
+.imagen-interactiva {
+    background-image: url(../img/mapa-interactivo.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 600px;;
+}
 .card {
     border: none;
 }
