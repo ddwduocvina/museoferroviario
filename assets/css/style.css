@@ -234,10 +234,11 @@ a, .span-a {
 
 /* Sección Portada */
 
-.portada {
+.portada source{
     
     position: relative;
 	z-index: 1;
+    
 }
 
 .portada__p {
@@ -257,6 +258,7 @@ a, .span-a {
     border-radius: 50%;
     position: absolute;
     z-index: 2;
+    overflow: hidden;
 }
 
 /* Sección horarios y precios */
