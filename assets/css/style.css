@@ -463,12 +463,26 @@ a, .span-a {
     position: relative;
     padding: 0 12px;
 }
+.h3-span-act3 {
+    background-color: var(--var-gris-claro);
+    position: relative;
+    padding: 0 12px;
+}
 
 .svg-actividades {
     padding: 0;
     margin: 0;
 }
 
+.fondoact2 {
+    background-color: var(--var-gris-claro) !important;
+    margin-bottom: 10%;
+} 
+
+.fondoact3{
+    background-color: var(--var-gris-claro) !important;
+    
+} 
 
 /* */
 
@@ -539,9 +553,7 @@ img {
 .navegador {
 	float: right;		
 }
-.navegador {
-	float: right;
-} 
+ 
 .navbar-light .navbar-nav .nav-link {
 	color: black;
 	font-size: medium;
