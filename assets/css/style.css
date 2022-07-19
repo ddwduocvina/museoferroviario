@@ -638,3 +638,41 @@ iframe {
 .svg-contacto {
     margin-top: -60px;
 }
+
+/* linea de tiempo */
+.linea-de-tiempo {
+
+}
+.linea {
+    display: block;
+    position: relative;
+}
+.linea::before {
+    position: absolute;
+    content: '';
+    left: 0;
+    right: 0;
+    top: 9px;
+    height: 1px;
+    width: 100%;
+    border-top: 2px dashed var(--var-dorado);
+}
+.linea-de-tiempo .rounded {
+    border-radius: 10px !important;
+    box-shadow: 0 0 10px rgba(0,0,0,.15);
+}
+.punto-linea {
+    text-indent: -9999em;
+    border: 3px solid var(--var-dorado);
+    background-color: var(--var-blanco);
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
+    display: block;
+    position: relative;
+}
+@media only screen and (min-width: 1400px) {
+    .margen-contenedor-linea {
+        padding-left: calc( (100vw - 1320px) / 2 );
+    }
+}
