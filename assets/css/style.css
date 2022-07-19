@@ -211,6 +211,8 @@ a, .span-a {
     border-radius: 4px; 
     font-size: 12px;
     font-weight: 200;
+    z-index: 3;
+    position: relative;
 }
 
 .span-fechas-crono {
@@ -418,6 +420,11 @@ a, .span-a {
     position: relative;
     padding: 0 12px;
 }
+.svg-actividades {
+    padding: 0;
+    margin: 0;
+}
+
 
 /* */
 
@@ -488,18 +495,13 @@ img {
 .navegador {
 	float: right;		
 }
-
-
-
 .navegador {
 	float: right;
 } 
-
 .navbar-light .navbar-nav .nav-link {
 	color: black;
 	font-size: medium;
 }
-
 .navbar-light .navbar-nav .nav-link :hover{
 	color: skyblue;
 }
@@ -507,32 +509,26 @@ img {
 .nav-link {
 	color: #545454;
 	font-size: small;
-	
 }
-
 .btn-reserva {
 	background-color: cadetblue;
 	color: white;
 	font-size: medium;
 	padding: 15px 27px;
 }
-
 .btn-reserva:hover {
 	background-color: rgb(132, 187, 189);
 	color: white;
 	padding: 15px 27px;
 	margin-bottom: 10px;
 	transition: 0.3s;
-
 }
-
 .btn-reserva i{
 	rotate: 60px;
 	transition: 0.5s;
 	transform: rotate(-50deg);
 	margin-right: 6px;
 }
-
 .btn-reserva:hover i{
 	rotate: 60px;
 	transition: 0.3s;
@@ -543,11 +539,13 @@ img {
 	color: olive;
 	margin: 5px;
 }
-
 .fondoup {
 	background-color: darkkhaki;
 }
-
+/* Horarios y precios */
+.svg-horarios {
+    margin-top: -60px;
+}
 /* Noticias */
 .img-noticias {
     height: 180px;
