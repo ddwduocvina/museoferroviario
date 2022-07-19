@@ -279,12 +279,15 @@ a, .span-a {
 
 /* Portada contactos */
 #portada {
-    background: url(../img/trenes/locomotora-2.jpg);
+    background: url(../img/imagen-contacto.jpg) 50% no-repeat;
     /* position: relative;
 	z-index: 1; */
     background-size: cover;
     height: 500px;
     /* overflow: hidden; */
+}
+.h2-portada {
+    padding-top: 200px;
 }
 
 
