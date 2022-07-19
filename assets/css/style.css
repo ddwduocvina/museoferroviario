@@ -505,7 +505,8 @@ a, .span-a {
 
 .fondoact2 {
     background-color: var(--var-gris-claro) !important;
-    padding-bottom: 10%;
+    padding-bottom: 9%;
+    margin-bottom: -50px;
 } 
 
 .fondoact3{
@@ -514,6 +515,16 @@ a, .span-a {
 } 
 
 /* */
+
+.fondoact2 .modulo_entrada {
+    aspect-ratio: 1;
+    margin: 12px 0;
+}
+
+.fondoact2 .modulo_entrada .h4-span {
+    font-size: 22px
+}
+
 
 
 label {
@@ -716,9 +727,7 @@ iframe {
 }
 
 /* linea de tiempo */
-.linea-de-tiempo {
 
-}
 .linea {
     display: block;
     position: relative;
