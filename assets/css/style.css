@@ -79,7 +79,7 @@ a, span, p, h3, h5, h6, label, *::placeholder {
 }
 
 h2 {
-    font-size: 64px;
+    font-size: 70px;
     font-weight: 700;
     text-transform: capitalize;
     margin-bottom: 8px;
@@ -279,6 +279,8 @@ a, .span-a {
 
 /* Sección horarios y precios */
 
+
+
 .horarios__p{
     font-size: 16px;
     margin-bottom: 12px;
@@ -469,13 +471,13 @@ label {
     border: 2px solid #fff;
     box-shadow: 0 2px 8px 0 rgba(0,0,0,.15);
     border-radius: 16px;
-    transition: 100ms ease-out transform;
 	font-family: 'Poppins', sans-serif;
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .btn:hover, .btn:focus{
-    transform: translateY(-4px);
-    transition: 100ms ease-out transform;
     border: 2px solid #fff;
 }
 
@@ -483,6 +485,7 @@ label {
     background-color: var(--var-primary);
     padding: 14px 32px;
     color: #fff;
+    transition: 100ms ease-out transform;
 }
 
 .btn-secondary {
@@ -493,11 +496,24 @@ label {
 
 .btn-primary:hover {
     background: var(--var-primary-hover);
+    transform: translateY(-4px);
+    transition: 100ms ease-out transform;
 }
 
 .btn-secondary:hover {
     background: var(--var-secondary-hover);
     color: #fff;
+}
+
+.btn ion-icon{
+    font-size: 22px;
+	transition: 0.5s transform;
+	margin-right: 6px;
+}
+.btn:hover ion-icon{
+	transition: 0.3s transform;
+	transform: rotate(-90deg);
+	margin-right: 6px;
 }
 
 /* Imagenes */
@@ -506,15 +522,11 @@ img {
     border-radius: 16px;
 }
 
-.navegador {
-	float: right;		
-}
-.navegador {
-	float: right;
-} 
-.navbar-light .navbar-nav .nav-link {
+/* Nav */
+
+.nav-link {
 	color: black;
-	font-size: medium;
+    font-weight: 300;
 }
 .navbar-light .navbar-nav .nav-link :hover{
 	color: skyblue;
@@ -522,39 +534,25 @@ img {
 
 .nav-link {
 	color: #545454;
-	font-size: small;
 }
-.btn-reserva {
-	background-color: cadetblue;
-	color: white;
-	font-size: medium;
-	padding: 15px 27px;
+
+.faverde {
+	color: rgb(142, 199, 56);
+	margin-right: 5px;
 }
-.btn-reserva:hover {
-	background-color: rgb(132, 187, 189);
-	color: white;
-	padding: 15px 27px;
-	margin-bottom: 10px;
-	transition: 0.3s;
+
+.menu-secundario__p {
+    margin: 0;
+    font-size: 12px;
 }
-.btn-reserva i{
-	rotate: 60px;
-	transition: 0.5s;
-	transform: rotate(-50deg);
-	margin-right: 6px;
-}
-.btn-reserva:hover i{
-	rotate: 60px;
-	transition: 0.3s;
-	transform: rotate(-120deg);
-	margin-right: 6px;
-}
-.iconn {
-	color: olive;
-	margin: 5px;
-}
+
 .fondoup {
-	background-color: #f1f3d6;
+    background: var(--var-secondary)
+}
+
+.fondoup .row {
+    display: flex;
+    align-items: center;
 }
 /* Horarios y precios */
 .svg-horarios {
@@ -598,15 +596,7 @@ iframe {
 	padding: 2px 20px; */
 }
 
-.faverde {
-	color: rgb(142, 199, 56);
-	margin-right: 5px;
-}
 
-.par p {
-	font-size: 13px;
-	color: black;
-}
 
 .logoo {
 	position: relative;
@@ -631,20 +621,15 @@ iframe {
 }
 .barraheader {
 	height: 137px;
-	
 }
 
 .bg-white2 {
 	background-color: white;
-	height: 110px;
+    height: 110px;
 	padding-top: 15px;
     box-shadow: 0 5px 18px rgba(0,0,0,.1);
 }
 
-.barra {
-	background-color: yellowgreen;
-
-}
 /* Contacto*/
 .svg-contacto {
     margin-top: -60px;
