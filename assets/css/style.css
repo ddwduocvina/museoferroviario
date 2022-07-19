@@ -251,6 +251,10 @@ a, .span-a {
 
 .portada__col {
     background: rgba(0,0,0,.5);
+    width: 700px;
+    height: 700px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
     border-radius: 50%;
 }
 
