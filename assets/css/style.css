@@ -407,6 +407,14 @@ a, .span-a {
   grid-row-start: 1;
   grid-row-end: 3;
 }
+.bg-modulo-actividades{
+    background-color: var(--var-gris-claro);
+}
+.h3-span-act {
+    background-color: var(--var-gris-claro);
+    position: relative;
+    padding: 0 12px;
+}
 
 /* */
 
