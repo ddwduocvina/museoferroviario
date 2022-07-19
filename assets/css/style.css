@@ -298,6 +298,16 @@ a, .span-a {
     overflow: hidden;
 }
 
+/* Portada actividades */
+#portada3 {
+    background: url(../img/trenes/tren.jpg) 50% no-repeat;
+    position: relative;
+	z-index: 1;
+    background-size: cover;
+    height: 600px;
+    overflow: hidden;
+}
+
 
 /* Sección horarios y precios */
 
