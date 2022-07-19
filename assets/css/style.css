@@ -349,6 +349,9 @@ a, .span-a {
 }
 
 /* Modulo actividades */
+.bg-modulo-actividades {
+    background-color: var(--var-gris-claro);
+}
 .modulo_entrada {
     text-decoration: none;
     position: relative;
