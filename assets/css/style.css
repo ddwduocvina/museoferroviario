@@ -280,11 +280,11 @@ a, .span-a {
 /* Portada contactos */
 #portada {
     background: url(../img/trenes/locomotora-2.jpg);
-    position: relative;
-	z-index: 1;
+    /* position: relative;
+	z-index: 1; */
     background-size: cover;
     height: 500px;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 
@@ -694,7 +694,7 @@ iframe {
 
 /* Contacto*/
 .svg-contacto {
-    margin-top: -60px;
+    margin-top: -110px;
 }
 
 /* linea de tiempo */
