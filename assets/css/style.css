@@ -301,6 +301,16 @@ a, .span-a {
     overflow: hidden;
 }
 
+/* Portada actividades */
+#portada3 {
+    background: url(../img/trenes/tren.jpg) 50% no-repeat;
+    position: relative;
+	z-index: 1;
+    background-size: cover;
+    height: 600px;
+    overflow: hidden;
+}
+
 
 /* Sección horarios y precios */
 
@@ -415,6 +425,18 @@ a, .span-a {
 }
 .modulo-grande-grid .img_modulo {
     max-height: 623px;
+}
+
+.modulo-grande-grid2 .img_modulo {
+    max-height: 200px;
+    width: 100%;
+}
+
+.img_modulo2 {
+    object-fit: cover;
+    position: relative;
+    width: 100%;
+    max-height: 300px;
 }
 
 .span-fechas-crono::before {
@@ -732,8 +754,43 @@ iframe {
     display: block;
     position: relative;
 }
+.owl-nav {
+    position: absolute;
+    top: -70px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 186px;
+    text-align: center;
+}
+.owl-prev, .owl-next {
+    background-color: var(--var-gris-claro) !important;
+    border-radius: 15px;
+    width: 28px;
+    position: absolute;
+    margin-left: -30px;
+    left: 0;
+}
+.owl-prev:hover, .owl-next:hover {
+    background-color: var(--var-gris-oscuro) !important;
+}
+.owl-prev:hover span, .owl-next:hover span {
+    color: var(--var-blanco);
+}
+.owl-next {
+    margin-right: -30px; 
+    left: auto;
+    right: 0;
+}
+.owl-prev span, .owl-next span {
+    padding: 6px 8px;
+    display: inline-block;
+}
 @media only screen and (min-width: 1400px) {
     .margen-contenedor-linea {
         padding-left: calc( (100vw - 1320px) / 2 );
+    }
+    .owl-nav {
+        left: calc(calc( (100vw - 1320px) / 2 )* -1 );
     }
 }
