@@ -520,8 +520,6 @@ img {
 	transition: 0.5s;
 	transform: rotate(-50deg);
 	margin-right: 6px;
-	
-
 }
 
 .btn-reserva:hover i{
@@ -529,8 +527,6 @@ img {
 	transition: 0.3s;
 	transform: rotate(-120deg);
 	margin-right: 6px;
-	
-
 }
 .iconn {
 	color: olive;
@@ -538,7 +534,6 @@ img {
 }
 
 .fondoup {
-
 	background-color: darkkhaki;
 }
 
