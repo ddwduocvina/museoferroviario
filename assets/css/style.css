@@ -140,7 +140,7 @@ h4, .span-h4 {
 }
 
 h5 {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 500;
     margin-bottom: 12px;
 }
@@ -154,7 +154,7 @@ h6 {
     font-weight: 300;;
 }
 p {
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 200;
     line-height: 1.55em;
     margin-bottom: 20px;
