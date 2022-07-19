@@ -533,11 +533,8 @@ img {
 	background-color: darkkhaki;
 }
 /* Horarios y precios */
-.fondo-horario-precios {
-    background-image: url(../img/fondos/fondo-horario-precios.png);
-    background-position: center center;
-    background-repeat: no-repeat;
-    
+.svg-horarios {
+    margin-top: -60px;
 }
 /* Noticias */
 .img-noticias {
