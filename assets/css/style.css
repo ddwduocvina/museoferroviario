@@ -404,14 +404,14 @@ a, .span-a {
 }
 .modulo_entrada:hover .mask{
     display: block;
-    z-index: 1;
+    background: linear-gradient(0deg, rgba(2,0,36,.25) 0%, rgba(211,162,74,.2) 35%);
 }
 .mask {
     position: absolute;
+    z-index: 1;
     inset: 0;
-    background: rgb(2,0,36);
-    background: linear-gradient(0deg, rgba(2,0,36,.25) 0%, rgba(211,162,74,.2) 35%);
-    display: none;
+    background: linear-gradient(to top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);     
+    display: block;
 }
 .img_modulo {
     object-fit: cover;
