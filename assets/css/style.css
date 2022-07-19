@@ -234,19 +234,18 @@ a, .span-a {
 
 /* Sección Portada */
 
-#portada {
-    height: 600px;
-    background-image: url('../img/trenes/locomotora-2.jpg');
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    overflow: hidden;
+.portada {
+    
+    position: relative;
+	z-index: 1;
 }
 
 .portada__p {
     max-width: 40ch;
     margin-inline: auto;
     color: #fff;
+    position: absolute;
+    z-index: 3;
 }
 
 .portada__col {
@@ -256,6 +255,8 @@ a, .span-a {
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     border-radius: 50%;
+    position: absolute;
+    z-index: 2;
 }
 
 /* Sección horarios y precios */
