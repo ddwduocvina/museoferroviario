@@ -282,11 +282,11 @@ a, .span-a {
 
 /* Portada contactos */
 #portada {
-    background: url(../img/trenes/locomotora-2.jpg);
+    background: url(../img/trenes/Telefono-de-rueda-negro-700x341.jpeg) 50% no-repeat;
     position: relative;
 	z-index: 1;
     background-size: cover;
-    height: 500px;
+    height: 600px;
     overflow: hidden;
 }
 
@@ -301,7 +301,7 @@ a, .span-a {
     overflow: hidden;
 }
 
-/* Portada actividades */
+/* Portada parque */
 #portada3 {
     background: url(../img/trenes/tren.jpg) 50% no-repeat;
     position: relative;
@@ -612,7 +612,8 @@ img {
 }
 
 .fondoup {
-    background: var(--var-secondary)
+    background: var(--var-secondary);
+    
 }
 
 .fondoup .row {
