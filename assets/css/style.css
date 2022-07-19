@@ -247,6 +247,7 @@ a, .span-a {
     max-height: 600px;
     overflow: hidden;
     z-index: -1;
+    margin-top: -30px;
 }
 .textodes {
     position: absolute;
@@ -285,6 +286,18 @@ a, .span-a {
     height: 500px;
     overflow: hidden;
 }
+
+
+/* Portada actividades */
+#portada2 {
+    background: url(../img/trenes/FCA-Evento-02.jpeg) 50% no-repeat;
+    position: relative;
+	z-index: 1;
+    background-size: cover;
+    height: 600px;
+    overflow: hidden;
+}
+
 
 /* Sección horarios y precios */
 
