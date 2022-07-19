@@ -239,7 +239,7 @@ a, .span-a {
 .portada source{
     
     position: relative;
-	z-index: 1;
+	z-index: 0;
     
 }
 
@@ -247,8 +247,6 @@ a, .span-a {
     max-width: 40ch;
     margin-inline: auto;
     color: #fff;
-    position: absolute;
-    z-index: 3;
 }
 
 .portada__col {
@@ -259,7 +257,7 @@ a, .span-a {
     -webkit-border-radius: 50%;
     border-radius: 50%;
     position: absolute;
-    z-index: 2;
+    z-index: 1;
     overflow: hidden;
 }
 
