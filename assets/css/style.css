@@ -279,15 +279,16 @@ a, .span-a {
     left: 0;
     right: 0;
 }
-
+.h2-portada {
+    padding-top: 150px;
+}
 /* Portada contactos */
 #portada {
-
     background: url(../img/imagen-contacto.jpg) 50% no-repeat;
     /* position: relative;
 	z-index: 1; */
     background-size: cover;
-    height: 350px;
+    height: 400px;
     /* overflow: hidden; */
 }
 #portada2 {
@@ -295,7 +296,7 @@ a, .span-a {
     /* position: relative;
 	z-index: 1; */
     background-size: cover;
-    height: 350px;
+    height: 400px;
     /* overflow: hidden; */
 }
 
@@ -305,7 +306,7 @@ a, .span-a {
     /* position: relative;
 	z-index: 1; */
     background-size: cover;
-    height: 350px;
+    height: 400px;
     /* overflow: hidden; */
 }
 
